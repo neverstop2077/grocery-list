@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body{
+    font-family: 'Great Vibes', cursive;
+    background-color: #FFD23F;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.groceries{
+    width: 600px;
+    max-width: 80%;
+    min-height: 100vh;
+    background: white;
+    box-shadow: 10px 10px 24px 0px rgb(0 0 0 / 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.title{
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user_input{
+    font-family: 'Great Vibes', cursive;
+    width: 60%;
+    font-size: 2.5rem;
+    border-width: 0 0 3px 0;
+    border-color: #000;
+    outline: none;
+}
+
+.input_icon{
+    font-size: 2.5rem;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.input_icon:hover {
+    color: #ddbb4f;
+}
+
+#all_items{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+@media (max-width: 480px){
+    .title{
+        font-size: 2.5rem;
+    }
+
+    #user_input, .input_icon, #all_items{
+        font-size: 1.5rem;
+    }
+}
